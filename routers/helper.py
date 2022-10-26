@@ -2,7 +2,7 @@ import requests
 from fastapi.security import HTTPBasicCredentials,HTTPBearer
 from fastapi import Depends
 
-url = "https://dev.virtualkart.az/dac-service/auth/generator/check"
+url = "" #your token check url)
 
 def token_cheker(token):
     response_verify = requests.get(url, headers = {'Authorization': 'Bearer '+ token })
